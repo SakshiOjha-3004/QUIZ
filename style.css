@@ -1,0 +1,147 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lato";
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;/*horizontally center*/
+    align-items: center;/*vertically cenetr*/
+    width: 100vw;
+    height: 100vh;
+    background-color: #341f97;
+}
+.welcome_text{
+    
+    width: 400px;
+}
+
+.welcome_text input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.welcome_text button {
+    font-size: 22px;
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+        background-color: white;
+        border: none;
+        border-radius: 100px;
+        color:#341f97;
+        transition: 0.4s all;
+}
+.welcome_text button:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.welcome_text input:focus,
+.welcome_text button:focus{
+    outline: none;
+}
+
+/*PAGE 2*/
+
+.quiz{
+    border-radius: 3px;/*will not work as its now divided in 2items. apply it on it two children also*/
+    display: grid;
+    grid-template-rows: 60px auto;/*for first box and auto for second-take all thats left*/
+    width: 800px;
+    height: 500px;
+    background-color: white;
+}
+.quiz_header{
+    display: flex;
+    justify-content: space-between;
+    /*border-radius: 3px; it was giving radius in its lower part as well*/
+    background-color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.quiz_body{
+    /*border-radius: 3px;*/
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #ecf0f1;
+    padding: 30px;
+
+}
+.quiz_user{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.quiz_timer{
+    display: flex;
+    justify-content: center;/*for element inside timer i.e span element*/
+    align-items: center;
+    padding:30px 30px 30px;
+    background-color: #341f97;
+    color: white;
+}
+.options_group{
+    list-style-type: none;
+    margin: 30px 0;
+}
+.options{
+    background-color: #fff;
+    width: 300px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 100px;
+    border: 2px solid transparent;/*to avoid abrupt increase when applying border
+    via hovering*/
+
+}
+.options:hover{
+    cursor: pointer;
+    border: 2px solid #341f97;
+}
+.next-btn{
+    width:15px 0;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 100px;
+    border: transparent;
+    background-color: #341f97;
+    color: white;
+    transition: 0.4s all;
+}
+.next-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #341f97;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+}
+
+.active{
+    background-color: #341f97;
+    color: #fff;
+
+}
+.award_icon{
+    font-size: 300px;
+    color: #fff;
+
+}
+
+.user_name,
+.user_points,
+.user_time{
+    color: #fff;
+    text-align: center;
+    margin: 15px;
+}

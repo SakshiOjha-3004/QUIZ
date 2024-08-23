@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="dist\js\css\style.css">
+</head>
+<body> 
+    <div class="wrapper">
+        <div class="quiz">
+            <!--2 parts needed!one for header and one for body-->
+            <div class="quiz_header">
+                <div class="quiz_user">
+                    <h4>WELCOME! <span class="name"></span></h4>
+                </div>
+                <div class="quiz_timer">
+                    <span class="time">00::00</span>
+                </div>
+            </div>
+            <div class="quiz_body">
+                <div id="questions">
+                    <!--<h2>Q1. What is the full form of RAM?</h2>
+                <ul class="options_group">
+                    <li class="options">option1</li>
+                    <li class="options">option2</li>
+                    <li class="options">option3</li>
+                    <li class="options">option4</li>
+                </ul>-->
+                </div>
+                <button class="next-btn" onclick="next()">Next Question</button>
+            </div>
+        </div>
+    </div>
+    <script src="dist/js/timer.js"></script>
+    <script src="dist/js/quiz.js"></script>
+</body>
+</html>
